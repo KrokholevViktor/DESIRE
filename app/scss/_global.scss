@@ -34,7 +34,7 @@ body {
 
 .container-fluid {
 	max-width: 1920px;
-	padding: 0 10px;
+	padding: 0 30px;
 	margin: 0 auto;
 }
 
@@ -61,4 +61,23 @@ body {
 	}
 }
 
+.info-email {
+	position: relative;
+	display: inline-block;
+	font-weight: 600;
+	color: $title;
+	font-style: 14px;
+
+	margin-bottom: 22px;
+	padding-left: 30px;
+	&::before {
+		content: '';
+		position: absolute;
+		background-image: url(../images/footer/envelope.svg);
+		top: 8px;
+		left: 0;
+		height: 12px;
+		width: 16px;
+	}
+}
 

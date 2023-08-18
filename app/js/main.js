@@ -16,4 +16,34 @@ $(function () {
         autoplaySpeed: 5000,
     });
 
+    $('.contact-slider').slick({
+        dots: true,
+        arrows: false,
+        slidesToShow: 10,
+        slidesToScroll: 10,
+        
+    });
+
+    try {
+        var mixer = mixitup('.gallery__inner', {
+            load: {
+                filter: '.living'
+            },
+        });
+    } catch (error) {
+        
+    }
+
+    
+    
+
+
 });
+
+    try {
+        Fancybox.bind("[data-fancybox]", {
+            hideScrollbar: false,
+          });
+    } catch (error) {
+        
+    }
