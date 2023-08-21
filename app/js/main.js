@@ -24,6 +24,16 @@ $(function () {
         
     });
 
+    $('.article-slider__box').slick({
+        dots: false,
+        arrows: true,
+        prevArrow: `<button type="button" class="article-slider__arrow article-slider__arrow-left"><img src="images/arrow-slide-left.svg"></button>`,
+        nextArrow: `<button type="button" class="article-slider__arrow article-slider__arrow-right"><img src="images/arrow-slide-right.svg"></button>`,
+        
+    });
+
+    
+
     try {
         var mixer = mixitup('.gallery__inner', {
             load: {
