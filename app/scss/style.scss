@@ -274,6 +274,9 @@
             position: absolute;
             content: "";
             background-image: url(../images/main_slider_bg.jpg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
             z-index: -1;
             top: 0;
             width: 100%;
