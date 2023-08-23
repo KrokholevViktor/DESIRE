@@ -25,7 +25,45 @@ $(function () {
         arrows: false,
         slidesToShow: 10,
         slidesToScroll: 10,
-        
+        responsive: [
+            {
+              breakpoint: 1700,
+              settings: {
+                slidesToShow: 8,
+                slidesToScroll: 8,
+              }
+            },
+            {
+              breakpoint: 1380,
+              settings: {
+                slidesToShow: 5,
+                slidesToScroll: 5
+              }
+            },
+            {
+                breakpoint: 920,
+                settings: {
+                  slidesToShow: 3,
+                  slidesToScroll: 3,
+                  
+                }
+              },
+            {
+              breakpoint: 640,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+              }
+            },
+            {
+                breakpoint: 420,
+                settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1,
+                  
+                }
+              }
+          ]
     });
 
     $('.article-slider__box').slick({
